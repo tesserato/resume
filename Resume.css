@@ -8,18 +8,29 @@
 
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body{
   background-color:var(--background-color);
-  margin-left: 10%;
-  margin-right:10%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
+  margin-left: 13%;
+  margin-right:13%;
+
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Bitter', serif; */
+  /* font-family: 'Comfortaa', cursive; */
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  font-family: 'Vollkorn', serif;
+
+  font-size: 1.1em;
   color:var(--font_color_dark);
 }
+
 h1{
-  font-size: 2.5em;
+  font-size: 2.3em;
+  font-weight: 100;
+  letter-spacing: .08em;
   color:var(--font_color_light);
 }
 
@@ -32,10 +43,13 @@ h1{
 
 .Top{
   display: flex;
-  /* border: 1px solid red; */
   /* background-color:var(--background-color);   */
   /* border: 1em solid var(--background-color); */
   /* margin-left: 4%; */
+}
+
+.Contact{
+  font-size: 1.2em;
 }
 
 .Intro{
@@ -70,17 +84,20 @@ table{
 }
 
 .Shadow{
+  /* padding: .01em; */
   transition: all .8s ease-in-out;
 }
 
 .Shadow:hover{
   /* background-color: var(--highlight); */
-  text-shadow: -0.05em 0.05em 0.07em var(--font_color_light);
+  text-shadow: -0.04em 0.04em 0.04em var(--font_color_light);
 }
 
 i{
+  font-size: 1.3em;
   color:var(--font_color_light);
   transition: transform .8s ease-in-out;
+  margin: auto;
 }
 
 i:hover {
@@ -98,12 +115,14 @@ a:hover{
 }
 
 .Explanations{
-  /* border: 1px solid red; */
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 1em;
+  padding-right: 30%;
   font-size: x-large;
   letter-spacing: .3em;
   color:var(--background-color);
-  /* animation: */
+
   animation-name: fade;
   animation-duration: 10s;
   animation-delay: 2s;
@@ -117,6 +136,24 @@ a:hover{
   letter-spacing: .7em;
 }
 
+.cf{
+  height: .8em;
+  width: .8em;
+  border-radius: .8em;
+  background-color: var(--font_color_dark);
+  display: inline-block;
+  margin-right: .3em;
+}
+
+.ce{
+  height: .8em;
+  width: .8em;
+  border-radius: .8em;
+  background-color: var(--font_color_light);
+  display: inline-block;
+  margin-right: .3em;
+}
+
 @keyframes fade {
   0%   {color:var(--background-color);}
   10%  {color:var(--font_color_dark);}
@@ -128,5 +165,4 @@ a:hover{
 @keyframes lighttodark {
   0%   {color:var(--font_color_light);}
   100% {color:var(--font_color_dark);}
-
 }
