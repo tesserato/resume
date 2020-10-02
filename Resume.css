@@ -1,15 +1,16 @@
-/* :root {
+html {
   --background-color: white;
   --font_color_dark:rgb(17, 17, 17);
   --font_color_light:rgb(119, 119, 119);
   --shadow: rgba(119, 119, 119, 0.877);
-} */
+}
 
-html {
-  --background-color:rgb(36, 34, 34) ;
-  --font_color_dark:white;
-  --font_color_light:rgb(192, 192, 192);
-  --shadow: rgba(0, 0, 0, 0.877);
+.Switch{
+  position: fixed; /*change to fixed*/
+  left: 1em;
+  top: 1em;
+  /* display: inline; */
+  width: 90%;
 }
 
 
@@ -19,19 +20,14 @@ html {
 }
 
 body{
+  display:block !important;
   background-color:var(--background-color);
   margin-left: 9%;
   margin-right:9%;
-
-  /* font-family: 'Quicksand', sans-serif; */
-  /* font-family: 'Josefin Sans', sans-serif; */
-  /* font-family: 'Bitter', serif; */
-  /* font-family: 'Comfortaa', cursive; */
-  /* font-family: 'Merriweather Sans', sans-serif; */
   font-family: 'Vollkorn', serif;
-
   font-size: 1.1em;
   color:var(--font_color_dark);
+  transition: all .5s ease-in-out;
 }
 
 h1{
@@ -75,7 +71,6 @@ img{
   width: 20%;
   box-shadow: -0.5em 0.5em 1em var(--shadow);
   transition: all .8s ease-in-out;
-
 }
 
 img:hover{
@@ -110,6 +105,7 @@ i{
 i:hover {
   transform: rotate(360deg);
 }
+
 
 a {
   color:var(--font_color_light);

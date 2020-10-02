@@ -1,6 +1,7 @@
 
 var light = true
-var header = document.getElementById("header")
+var toggle = document.getElementById("toggle")
+var pic = document.getElementById("pic")
 
 // --background-color: white;
 
@@ -12,14 +13,19 @@ function set_light() {
 
 function set_dark() {
   console.log('to dark theme');
-  document.documentElement.style.cssText = "--background-color:rgb(36, 34, 34);--font_color_dark:white;--font_color_light:rgb(192, 192, 192);--shadow: rgba(0, 0, 0, 0.877);"
+  document.documentElement.style.cssText = "--background-color:rgb(60, 66, 68);--font_color_dark:white;--font_color_light:rgb(192, 192, 192);--shadow: rgb(0, 0, 0);"
+  pic.style.filter = "invert(100%)"
+
+  setTimeout(function(){
+    pic.attributeStyleMap.clear()
+  }, 800);
   return
 }
 
 
 window.onload = set_light();
 
-header.addEventListener("click", 
+toggle.addEventListener("click", 
 function(e) {  
   if (light) {
     set_dark()
