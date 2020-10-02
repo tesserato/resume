@@ -1,8 +1,15 @@
-:root {
+/* :root {
   --background-color: white;
   --font_color_dark:rgb(17, 17, 17);
   --font_color_light:rgb(119, 119, 119);
   --shadow: rgba(119, 119, 119, 0.877);
+} */
+
+html {
+  --background-color:rgb(36, 34, 34) ;
+  --font_color_dark:white;
+  --font_color_light:rgb(192, 192, 192);
+  --shadow: rgba(0, 0, 0, 0.877);
 }
 
 
@@ -13,8 +20,8 @@
 
 body{
   background-color:var(--background-color);
-  margin-left: 13%;
-  margin-right:13%;
+  margin-left: 9%;
+  margin-right:9%;
 
   /* font-family: 'Quicksand', sans-serif; */
   /* font-family: 'Josefin Sans', sans-serif; */
@@ -66,7 +73,7 @@ img{
   margin: auto;
   height: 20%;
   width: 20%;
-  box-shadow: -0.5em 0.5em 1em var(--font_color_light);
+  box-shadow: -0.5em 0.5em 1em var(--shadow);
   transition: all .8s ease-in-out;
 
 }
@@ -90,7 +97,7 @@ table{
 
 .Shadow:hover{
   /* background-color: var(--highlight); */
-  text-shadow: -0.04em 0.04em 0.04em var(--font_color_light);
+  text-shadow: -0.04em 0.04em 0.04em var(--shadow);
 }
 
 i{
