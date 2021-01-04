@@ -2,7 +2,7 @@ html {
   --background-color: white;
   --font_color_dark:rgb(17, 17, 17);
   --font_color_light:rgb(119, 119, 119);
-  --shadow: rgba(119, 119, 119, 0.877);
+  --shadow: rgba(119, 119, 119, 0.5);
 }
 
 .Switch{
@@ -92,7 +92,7 @@ table{
 
 .Shadow:hover{
   /* background-color: var(--highlight); */
-  text-shadow: -0.04em 0.04em 0.04em var(--shadow);
+  text-shadow: -0.03em 0.03em 0.03em var(--shadow);
 }
 
 i{
@@ -124,7 +124,7 @@ a:hover{
   padding-right: 30%;
   font-size: x-large;
   letter-spacing: .3em;
-  color:var(--background-color);
+  color:rgba(0, 0, 0, 0);
 
   animation-name: fade;
   animation-duration: 10s;
